@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>pig game</title>
+  </head>
+  <body>
+    <button class="new-game">🔄 New game</button>
+    <main>
+      <!-- player 1 section -->
+      <div class="player player--active" id="playerOne">
+        <h2 class="player__name" id="nameFirst">Player 1</h2>
+        <p class="player__globalScore" id="globalScoreFirst">0</p>
+        <div class="player__localScore">
+          <p class="player__localScoreLabel">current</p>
+          <p class="player__localScoreValue" id="currentFirst">0</p>
+        </div>
+      </div>
+      <!-- dice -->
+      <div class="middle">
+        <img src="./images/roll.png" alt="dice roll" class="middle__diceImg" width="140px" />
+        <div class="middle__button">
+          <button class="middle__buttonRoll">🎲 Roll dice</button>
+          <button class="middle__buttonHold">📥 Hold</button>
+        </div>
+      </div>
+      <!-- player 2 section -->
+      <div class="player" id="playerTwo">
+        <h2 class="player__name" id="nameSecond">Player 2</h2>
+        <p class="player__globalScore" id="globalScoreSecond">0</p>
+        <div class="player__localScore">
+          <p class="player__localScoreLabel">current</p>
+          <p class="player__localScoreValue" id="currentSecond">0</p>
+        </div>
+      </div>
+    </main>
+    <!-- scripts -->
+    <script src="app.js"></script>
+  </body>
+</html>
