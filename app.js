@@ -33,6 +33,7 @@ const checkWinner = () => {
         playerTwoDiv.classList.add('player--win')
     }
     if (playerOneTotalScore.textContent >= 100 || playerTwoTotalScore.textContent >= 100) {
+        diceImage.style.transform = "scale(0)"
         diceImage.style.animation = "popWinEmoji 2.5s linear 0s infinite"
         diceImage.src = './images/win.png'
         diceImage.style.filter = 'unset'
